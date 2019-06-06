@@ -8,7 +8,7 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.1-sdk
 WORKDIR /src
-COPY ["WebApplication1testdekl/WebApplication1testdekl.csproj", "WebApplication1testdekl/"]
+COPY ["./WebApplication1testdekl/WebApplication1testdekl.csproj", "WebApplication1testdekl/"]
 RUN dotnet restore "WebApplication1testdekl/WebApplication1testdekl.csproj"
 COPY . .
 WORKDIR "/src/WebApplication1testdekl"
